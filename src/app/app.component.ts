@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from 'src/Modal/user';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basic-app';
+  
+  constructor(){
+
+  }
+  ngOnInit(){
+
+  }
+  
 }

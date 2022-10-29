@@ -1,0 +1,24 @@
+<div class="addwih">
+    <div class="center_wr">
+        <div class="form">
+            <div class="form-field">
+                <input type="text"
+                 placeholder="Etner_title"
+                 [(ngModel)]="model.title"
+                 >
+            </div>
+            <div class="form-field">
+                <input type="text"
+                placeholder="Etner_title"
+                [(ngModel)]="model.discription"
+                >
+            </div>
+            <div class="form-field">
+                <button (click)="addwish()">
+                    {{ id ? "Update Wish" : "Add Wish"}}
+                    
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

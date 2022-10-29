@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+.header{
+    background-color: black;
+    line-height: 60px;
+}
+ul li{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    letter-spacing: 1.2px;
+}
+
+.center_wr{
+    width: 1200px;
+    margin: 0 auto;
+}
+.form-field{
+    margin-bottom: 15px;
+}
+input[type="text"]{
+    padding: 8px 12px;
+}
+button{
+    background-color: #ec6100;
+    padding: 8px 12px;
+    border:none;
+    border-radius: 5px;
+    transform: .4s;
+    font-weight: bold;
+}
+button:hover{
+    background-color: black;
+    color: #fff;
+}

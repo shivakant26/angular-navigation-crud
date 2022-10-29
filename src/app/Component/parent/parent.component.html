@@ -1,0 +1,26 @@
+<p>parent works!</p>
+<h4>parent component</h4>
+    <table border="1">
+        <tr>
+            <th>Index</th>
+            <th>Title</th>
+            <th>Discription</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let listdata of list;let i = index;">
+            <td>{{i}}</td>
+            <td>{{listdata.title}}</td>
+            <td>{{listdata.discription}}</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </table>
+    <div class="child component">
+        <h5>Child Component</h5>
+    <app-home 
+    message="hellow i am your parent data"
+    (notify)="mydata($event)"
+    ></app-home>
+    </div>

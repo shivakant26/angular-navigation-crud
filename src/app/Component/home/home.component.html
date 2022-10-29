@@ -1,0 +1,8 @@
+<p>{{message}}</p>
+<div *ngIf="age < 18;else other_content">
+    <p style="color: green;">yo are eligible</p>
+</div>
+<ng-template #other_content>
+<p style="color: red;">not qualify</p>
+</ng-template>
+<button (click)="sendus()"[disabled]="canClick">Send Us</button>
