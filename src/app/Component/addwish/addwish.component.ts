@@ -12,7 +12,7 @@ export class AddwishComponent implements OnInit {
   data:any = []
   list:any
   id:any;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,private router:Router) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
@@ -35,6 +35,7 @@ export class AddwishComponent implements OnInit {
       this.data.push(this.model)
       this.model={title:"",discription:""}
     }
+    this.router.navigate(['/wishlist']);
     localStorage.setItem("data",JSON.stringify(this.data))
     console.log(123,this.data)
   }

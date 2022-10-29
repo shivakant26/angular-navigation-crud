@@ -1,0 +1,32 @@
+<div style="text-align: center;">
+<h2>Register User here......</h2>
+<div class="register-form">
+    <div class="center_wr">
+        <div class="form">
+            <div class="form-field">
+                <input type="text"
+                 placeholder="name"
+                 [(ngModel)]="register.name"
+                 >
+            </div>
+            <div class="form-field">
+                <input type="text"
+                placeholder="email"
+                [(ngModel)]="register.email"
+                >
+            </div>
+            <div class="form-field">
+                <input type="text"
+                placeholder="password"
+                [(ngModel)]="register.password"
+                >
+            </div>
+            <div class="form-field">
+                <button (click)="registerUser()">
+                    Register
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

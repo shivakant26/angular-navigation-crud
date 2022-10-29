@@ -1,0 +1,40 @@
+<div style="text-align: center;">
+    <h2>Login User here......</h2>
+    <div class="login-form">
+        <div class="center_wr">
+            <div class="form">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-field">
+                    <input type="text"
+                    formControlName="name"
+                     placeholder="name"
+                     [(ngModel)]="login.name"
+                     required
+                     >
+                     <!-- <div *ngIf="loginForm.name?.invalid && (loginForm.name?.dirty || loginForm.name?.touched)" class="error">
+                        <div *ngIf="loginForm.name?.errors">
+                          Username is required.
+                        </div>
+                      </div> -->
+                </div>
+                <div class="form-field">
+                    <input type="text"
+                    formControlName="password"
+                    placeholder="password"
+                    [(ngModel)]="login.password"
+                    required
+                    >
+                    <!-- <div *ngIf="loginForm.password?.invalid && (loginForm.password?.dirty || loginForm.password?.touched)" class="error">
+                        <div *ngIf="loginForm.password?.errors?.['required']">
+                          Password is required.
+                        </div>
+                      </div> -->
+                </div>
+                <div class="form-field">
+                    <input type="submit" [disabled]="!loginForm.valid" value="login">
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
